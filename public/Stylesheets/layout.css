@@ -1,0 +1,55 @@
+.errorMessage {
+    color: red;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#compnayName {
+    color: #007BFF;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1%;
+}
+
+.navbar-form {
+    position: relative;
+    width: 60%;
+}
+
+.navbar-form ul.list-group {
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    position: absolute;
+    transition: all 0.2s linear;
+}
+
+.list-group li a {
+    margin-top: -1px;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+}
+
+.list-group li:hover {
+    background: #007BFF;
+
+}

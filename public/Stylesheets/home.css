@@ -1,3 +1,68 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: auto;
+}
+
 body{
-    background: blue;
+    background-color: #FFFFFF;
+}
+
+
+
+.template-section{
+    background-image: url('https://static.ambitionbox.com/img/homepage/header.svg');
+    position: relative;
+    top: 60px;
+    justify-items: auto;
+    text-align: center;
+    height: 300px;
+    width: 100%;
+    background-color: #272E48;
+}
+.main{
+    top: 50%;
+}
+
+h1{
+    color: white;
+    font-weight: bold;
+}
+.text{
+     /* background-color: red;  */
+    height: 150px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+
+       
+        padding-left: 0px;
+        text-align: center;
+        padding-right: 0px;
+
+}
+
+#span-text{
+    color: white;
+}
+
+input{
+    width: 70%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.inputBox{
+    position: relative;
+    top: 120px;
+}
+
+#next-section{
+ margin-top: 400px;
+    /* background-color: red; */
 }

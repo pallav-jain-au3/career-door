@@ -1,0 +1,78 @@
+<div class="container-fluid mt-5">
+  <div class="row">
+    <div class="img-box col-md-4 text-center"><img  src="{{company.logo}}" alt="{{company.companyName}}">
+</div>
+    <div class="company-box col-md-4 text-center"><h1 id="companyName">{{company.companyName}} <p>{{company.department}}</p>
+</h1>
+</div>
+    <div class="description-box col-md-4 text-center pt-2 text-left">
+    <p class="description-text"><i class="fas fa-city"></i>&nbsp;{{company.owns}}</p>
+    <p class="description-text"><i class="fas fa-globe"></i> &nbsp; {{company.website}}</p>
+    <p class="description-text"><i class="fas fa-users"></i> &nbsp; {{company.numberOfEmployee}}</p>
+    <p class="description-text"><i class="fas fa-map-marker-alt">&nbsp;</i> {{company.city}}, {{company.country}}</p>
+    {{#if AverageRating}}
+    <p class="description-text"><i class="fas fa-star"></i> &nbsp;Average rating : &nbsp;{{AverageRating}}/5</p>
+    {{else}}
+    <p class="description-text">No rating Added</p>
+    {{/if}}</div>
+  </div>
+  
+<div class="container">
+<hr>
+<div class=" review-box row mt-5">
+  <div class="col-12">
+    
+  <h2 style="display: inline; color:#007BFF">Reviews</h2>
+  <a href="/review/addReview/{{companyId}}" class="btn btn-primary" style="position:ralative; float:right; margin-top:10px;">Write Review</a>
+  </div>
+{{#if reviews}}
+
+  {{#each reviews}}
+  <br>
+  <div class="card col-12">
+    <h5> {{this.review.reviewHeading}}<span></h5>
+    <p>Average rating : &nbsp;Rated :{{this.review.reviewRating}}/5</p>
+    <p>{{this.review.description}}</p>
+    <p class="text-muted">{{this.review.datePublished}}</p>
+  </div>
+  {{/each}}
+</div>
+{{else}}
+<h5>No review Added</h5>
+{{/if}}
+
+</div>
+</div>
+
+
+
+{{!-- <div>
+<img src="{{company.logo}}" alt="{{company.companyName}}">
+<h1>{{company.companyName}}</h1>
+<p>{{company.owns}}</p>
+<p>{{company.department}}</p>
+<p>{{company.website}}</p>
+<p>{{company.numberOfEmployee}}</p>
+<p> {{company.city}}, {{company.country}}</p>
+{{#if AverageRating}}
+<p>Average rating:{{AverageRating}}/5</p>
+{{else}}
+<p>No rating Added</p>
+{{/if}}
+{{#if reviews}}
+<div class="row">
+  {{#each reviews}}
+  <div class="card col-12">
+    <h5>{{this.review.reviewHeading}}<span></h5>
+    <p>Rated :{{this.review.reviewRating}}/5</p>
+    <p>{{this.review.description}}</p>
+    <p class="text-muted">{{this.review.datePublished}}</p>
+  </div>
+  {{/each}}
+</div>
+{{else}}
+<h5>No review Added</h5>
+{{/if}}
+
+<a href="/review/addReview/{{companyId}}" class="btn btn-primary">add review</a>
+</div> --}}

@@ -1,0 +1,129 @@
+body{
+    background-color: #f7f7f7;
+}
+
+ .companyCard:hover{
+    text-decoration: none;
+}  
+
+.card {
+    transition: transform .2s;
+    width:100%;
+    height:100%;
+}
+
+ .card:hover{
+    border: 1px solid #3333FF;
+    transform: scale(1.05);
+} 
+
+#heading{
+    color: #007BFF;
+    font-size: 1.5rem;
+    margin-left:8rem;
+}
+
+.container{
+    width:100%;
+    background-color:#FFFFFF;
+    border: 1px solid #f7f7f7;
+    border-radius: 0rem;
+}
+
+.container1{
+    width:100%;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+.cards {
+    display: flex;
+}
+
+.card-deck{
+    width:23rem;
+    height: 18.0rem;
+}
+.card-section{
+    border: 1px solid grey;
+    
+}
+
+.company-logo{
+    width: 4.5rem;
+    height: 4rem;
+}
+
+#location{
+    font-size: 1rem;
+    margin-left: 5.5rem;
+    margin-top: 3.5rem;
+    color:	#000000;
+    text-align:justify; 
+    height:2rem;
+    line-height: 70%;
+}
+#field{
+    font-size: 1rem;
+    margin-left: 5.5rem;
+    margin-top: 0rem;
+    color:	#000000;
+    text-align:justify; 
+    height:2rem;
+    line-height: 80%;
+}
+
+#rating{
+    font-size: 1rem;
+    margin-left: 5.9rem;
+    margin-top: 0rem;
+    color:	#000000;
+    text-align:justify; 
+    line-height: 70%;
+}
+.company-title{
+    font-size: 2rem;
+    float: right;
+    margin-left: 6rem;
+    margin-top: -3.5rem;
+    color:	#000000;
+    height:2rem;
+    line-height: 95%;
+    word-spacing: 0px;
+   
+}
+
+#button{
+    background-color:#007BFF;
+    margin-top: 2rem;
+    border: 1px solid #808080;
+    border-radius: 0rem;
+}
+
+.icon{
+    color:#696969;
+    
+}
+
+@media only screen and (max-width: 768px) {
+   
+     .container1{ 
+        width:100%;
+        
+    }
+    .card-section{
+        width:100%;
+        height:100%; 
+       
+    }
+    .container{
+        width:100%;
+        
+        height: auto;
+    }
+    #heading{
+        color: #303030;
+        font-size: 1.5rem;
+        margin-left:3rem;
+    }
+} 

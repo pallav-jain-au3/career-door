@@ -1,21 +1,91 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-   <!-- layout stylesheet-->
-   <link rel="stylesheet" href="/css/layout.css">
-   <link rel="stylesheet" href="{{styles}}">
-    <title>{{title}}</title>
-  </head>
-  <body>
-    {{{body}}}
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!---font-awsome -->
+  <script src="https://kit.fontawesome.com/ab0cbbfa0a.js"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- layout stylesheet-->
+  <link rel="stylesheet" href="/Stylesheets/layout.css">
+  <link rel="stylesheet" href="/Stylesheets/{{styles}}">
+  <title>{{title}}</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a id="compnayName" class="navbar-brand {{#is title 'Career Door'}} active{{/is}} " href="/">Career Door
+      <span>|</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link {{#is title 'Career Door'}} active{{/is}}" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {{#is title 'Company'}} active{{/is}}" href="/company">Companies</a>
+        </li>
+      </ul>
+    
+         <form class="navbar-form search-box" role="search">
+        
+            <input type="text" class="form-control" placeholder="Search" name="srch-term" id="searchBar">
+            <ul id="suggestions" class="list-group"></ul>
+     
+        </form>
+      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+      
+        {{#if login}}
+        <li class="nav-item">
+          <a class="nav-link" href="{{profile}}">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/employee/logout">Logout</a>
+        </li>
+        {{else}}
+        <li class="nav-item">
+          <a class="nav-link {{#is title 'Register Company'}} active{{/is}}" href="/company/register">Register
+            Company</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {{#is title 'Employee Signup'}} active{{/is}}" href="/employee/signup">Signup</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {{#is title 'Employee Login'}} active{{/is}}" href="/employee/login">Login</a>
+        </li>
+        {{/if}}
+      </ul>
+    </div>
+  </nav>
+
+  {{{body}}}
+
+  <footer class="bg-dark mt-2">
+    All rights reserved © 2019 Career Door (India) Ltd. &COPY;
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="/Javascript/layout.js"></script>
+  <script src="/Javascript/{{script}}"></script>
+</body>
+
+
 </html>

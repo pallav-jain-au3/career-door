@@ -1,0 +1,91 @@
+<!-- Signup Form -->
+<div class="container">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header justify-content-center">
+        <h3 class="text-primary modal-title w-100 text-center">
+          Employee SignUp
+        </h3>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form action="/employee/signup" method="POST" id="employeeSignup">
+          {{!-- Firstname & Lastname  --}}
+          <div class="form-group">
+            <label>
+              <i class="far fa-user fa"></i>Firstname:
+            </label>
+            <input type="text" class="form-control" name="firstname" placeholder="Enter Firstname" autofocus required>
+            <br>
+            <label>
+              <i class="far fa-user fa"></i>Lastname:
+            </label>
+            <input type="text" class="form-control" name="lastname" placeholder="Enter Lastname" required>
+          </div>
+
+          {{!-- Username  --}}
+          <div class="form-group">
+            <label>
+              <i class="far fa-user fa"></i>Username:
+            </label>
+            <input type="text" class="form-control" name="username" placeholder="Enter Username">
+          </div>
+
+          {{!-- Gender  --}}
+          <!-- Default checked -->
+          <label>
+            <i class="far fa-user fa"></i>Gender:
+          </label>
+          <div class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input" id="defaultChecked" name="gender" value = "Male" checked>
+            <label class="custom-control-label" for="defaultChecked">Male</label>
+          </div>
+
+          <!-- Default unchecked -->
+          <div class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input" id="defaultUnchecked" name="gender" value = "Female">
+            <label class="custom-control-label" for="defaultUnchecked">Female</label>
+          </div>
+          <br>
+
+          {{!-- Email  --}}
+          <div class="form-group">
+            <label>
+              <i class="fas fa-envelope"></i>Email:
+            </label>
+            <input type="email" class="form-control" name="email" placeholder="Enter email" required>
+          </div>
+
+
+          {{!-- City  --}}
+          <div class="form-group">
+            <label>
+              <i class="fas fa-city"></i>City:
+            </label>
+            <input type="text" class="form-control" name="city" placeholder="Enter City" required>
+          </div>
+
+          {{!-- Country --}}
+          <div class="form-group">
+            <label>
+              <i class="fas fa-globe"></i>Country:
+            </label>
+            <input type="text" class="form-control" name="country" placeholder="Enter Country" required>
+          </div>
+
+          {{!-- Password --}}
+          <div class="form-group">
+            <label>
+              <i class="fa-lock-fa"></i>Password:
+            </label>
+            <input type="password" class="form-control" name="password" placeholder="Enter Password" required>
+          </div>
+          <span class="errorMessage"></span>
+          <div class="modal-footer justify-content-center">
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+#employeeData {
+    text-transform: capitalize;
+}
+
+.employeeUsername,
+.employeeEmail {
+    text-transform: lowercase;
+}
+
+#btnLogout {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}

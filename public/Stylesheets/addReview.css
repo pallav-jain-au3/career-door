@@ -1,0 +1,69 @@
+body{
+    background-color: #f7f7f7;
+    left:0;
+    right:0;
+}
+h4{
+    color:#007BFF;
+    margin-left: 28rem;
+    font-weight: 600;
+    
+}
+.form-control{
+    width:28rem;
+  
+}
+
+.modal-dialog{
+    margin-top: 0.8rem;
+    border: 1.5px solid #f7f7f7;
+    border-radius: 1rem;
+}
+#review{
+    padding:0rem;
+    margin-top: 1rem;
+    
+}
+
+#heading{
+    padding: 0rem;
+    margin-top: 1rem;
+    
+}
+
+.form-group{
+    font-size: 1rem;
+    line-height: 100%;
+    margin-bottom: 11px;
+    font-family: Helvetica,Arial;
+    font-weight: 700;
+}
+
+#rating{
+    padding: 0rem;
+    margin-top: 1.5rem;
+    
+}
+
+.btn{
+    float:center;
+    padding: 0rem;
+    margin-top: 1.5rem;
+    width:7.5rem;
+    height: 2.5rem;
+    border: 2px solid #f7f7f7;
+    border-radius: 0rem;
+
+}
+
+@media only screen and (max-width: 768px) {
+
+     .form-control{
+        width:100%;
+    }
+    h4{
+        margin-left:3rem;
+        font-weight: 700;
+        
+    }
+}

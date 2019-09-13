@@ -1,0 +1,64 @@
+body{
+    background-color: #EDEDED;
+}
+
+container-fluid{
+    background-color: #394363;
+}
+
+.row{
+    margin-top: 80px;
+    background-color: #394363;
+}
+
+.img-box{
+    border-radius: 5px;
+    /* background-color: red; */
+/* box-shadow: -4px 7px 5px 0px rgba(0,0,0,0.75); */
+}
+
+img{
+    height: 170px;
+    width: 180px;
+    position: relative;
+    margin-top: 17px;
+    background-color: #EFEFEF;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
+
+}
+
+
+
+.company-box{
+    background-color: #394363;
+    border-radius: 5px;
+
+}
+
+#companyName{
+    margin-top: 32px;
+    vertical-align: middle;
+     color:white;
+}
+.description-box{
+    background-color: #394363;
+}
+
+.description-text{
+    color: white;
+    text-align: left;
+}
+
+.review-box{
+     display: block;
+    padding: 10px;
+    margin-bottom: 100px; /* SIMPLY SET THIS PROPERTY AS MUCH AS YOU WANT. This changes the space below box1 */
+    text-align: justify;
+    background-color: #FFFFFF;
+
+}
+
+.card{
+    background-color: #EDEDED;
+}

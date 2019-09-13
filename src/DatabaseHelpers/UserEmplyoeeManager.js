@@ -23,7 +23,7 @@ class UserEmployeeManager {
                     callback(err)
                     return
                 }
-                callback(null, data._id);
+                callback(null, data.insertedId);
             })
         })
 
@@ -31,7 +31,7 @@ class UserEmployeeManager {
     loginUser(username, password, callback){
         this.collection.findOne({"username":username},(err, data)=>{
             if (err){
-                callback(new Error("unknown error"));
+                callback(new Error("Unknown error"));
                 return
             }
             if (!data){
@@ -43,7 +43,7 @@ class UserEmployeeManager {
                 callback(new Error("Incorrect username and password"));
                 return;
             }
-            callback(null, data)
+            callback(null, data._id)
         })
     }
 }
